@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU Staff Lounge</title>
+    <link rel="icon" type="image/png" href="../image/lounge.png"/>
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/Register.css">
+    <script defer src="../Js/Register.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="../image/lounge.png" alt="Staff lounge logo" id="img-logo">
+            <h2 id="company-name">AASTU STAFF LOUNGE</h2>
+        </div>
+        <div id="slogan">
+            <h3>We have been making healthy food for last years</h3>
+            <p>Choose Best Live Healthy!!!</p>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="form-container">
+            <form action="../html/login.html" id="form" onsubmit="return validateInputs ()">
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="userpassword">Password</label>
+                    <input type="password" id="userpassword" name="userpassword">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="confirmpassword">Confirm password</label>
+                    <input type="password" id="confirmpassword" name="confirmpassword">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="user-status">Status</label>
+                    <select name="user-status" id="user-status" required>
+                        <option value="">Staff Member</option>
+                        <option value="">Student</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>Copyright &copy; 2022 AASTU Staff Lounge</p>
+    </footer>
+</body>
+</html>

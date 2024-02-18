@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0b0b0b;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav{
+    background-color:#28292d;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #28292a;
+
+}
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#logo-img{
+    width: 80px;
+    height: 80px;
+}
+#company-name{
+    align-self: center;
+}
+.nav-menu{
+    text-align: right;
+    font-size: 20px;
+    padding: 0px 10px 10px 10px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: blanchedalmond;
+    padding:0px 5px;
+}
+.nav-slogan{
+    text-align: center;
+    padding: 15px;
+}
+h2, #time-des{
+    text-align: center;
+}
+span{
+  color: #FFB100;
+}
+main{
+    margin: 25px;
+    background-color:#28292d;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #28292a;
+    margin-top: 10px;
+    padding: 10vh;
+}
+
+.time-name{
+    text-align: center;
+    margin: 10px;
+}
+.menu-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
+}
+.menu-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-description > .menu-inner-description{
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+    text-align: center;
+}
+
+.inner-menu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#btn{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border:2px solid  #f9004d;;
+  font-weight:bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+  margin-left: 50%;
+}
+
+#btn:hover{
+  color:orange;
+  transform: scaleX()1.2;
+}
+.footer-control{
+    background-color:#28292d;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #28292a;
+}
+
+.footer-container{
+    margin: 10px 0 0 0;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+
+}
+.footer-container div{
+    text-align: center;
+}
+#copy-right{
+    text-align: center;
+    height: 30px;
+}
+
+/* @media screen and (max-width: 992px) {
+    .inner-menu-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .inner-menu-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-description{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    #btn{
+        margin-left: 30%;
+    }
+    .menu-description p{
+        display: none;
+    }
+    .nav-slogan{
+        display: none;
+    }
+}
+#icon{
+  color:red;
+  width: 20%;
+  height: 15%;
+}
+#icon:hover{
+  color: #e11d74;
+  transform: scale(1.5);
+}

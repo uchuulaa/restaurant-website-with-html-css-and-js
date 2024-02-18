@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU Staff Lounge</title>
+    <link rel="icon" type="image/png" href="../image/lounge.png"/>
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script defer src="../Js/login.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="../image/lounge.png" alt="Staff lounge logo" id="img-logo">
+            <h2 id="company-name">AASTU STAFF LOUNGE</h2>
+        </div> 
+        <div id="slogan">
+            <h3>We have been making healthy food for last years</h3>
+            <p>Choose Best Live Healthy!!!</p>
+        </div>
+    </header>
+
+
+    <div class="form-container">
+        <a href="./Register.html"><button class="signup-btn">Sign up</button></a>
+        <form action="./HomePage.html" id="form" onsubmit="return validateInputs()">
+             <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <a href="./HomePage.html"><button type="submit">Log in</button></a>
+            
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2022 AASTU Staff Lounge</p>
+    </footer>
+</body>
+</html>

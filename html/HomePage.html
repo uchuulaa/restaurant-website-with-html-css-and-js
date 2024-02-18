@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU Staff Lounge</title>
+    <link rel="stylesheet" href="../CSS/Homepage.css">
+    <link rel="icon" type="image/png" href="../image/lounge.png"/>
+    <script src="https://kit.fontawesome.com/e7833fedc9.js" crossorigin="anonymous"></script>
+    <script defer src="../Js/Homepage.js"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../image/lounge.png" alt="AASTU staff lounge log" id="logo-img">
+                <h2 id="company-name">AASTU Staff Lounge</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="./Menu2.html">Menu</a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact us</a>
+                <a href="#testimony">Testimony</a>
+            </div> 
+        </div>
+
+        <div class="nav-slogan">
+            <h3>We have been making healthy food for last years</h3>
+            <p>Choose Best Live Healthy!!!</p>
+        </div>
+    </header>
+    <main>
+        <div class="responsive-background"></div> <!-- containr responsive background with-->
+        <div class="home-tiles">
+                <a href="./Menu2.html">
+                    <div class="menu-tile">
+                        <span>Menu</span>
+                    </div>
+                </a>
+            <a href="./specialMenu.html">
+                <div class="special-menu-tile"><span>Specials table</span></div>
+            </a>
+            <a href="https://www.google.com/maps/place/Memihiran+Lounge-+%E1%88%98%E1%88%9D%E1%88%85%E1%88%AB%E1%8A%95+%E1%88%88%E1%8B%8D%E1%8A%95%E1%8C%85/@8.8840289,38.8095642,17z/data=!3m1!4b1!4m6!3m5!1s0x164b79cdb6c1b8e3:0xc1e4e44076646a6d!8m2!3d8.8840289!4d38.8117529!16s%2Fg%2F11nxg1d2bn" target="_blank">
+                <div class="map-tile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.952280997779!2d38.811752899999995!3d8.884028899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b79cdb6c1b8e3%3A0xc1e4e44076646a6d!2zTWVtaWhpcmFuIExvdW5nZS0g4YiY4Yid4YiF4Yir4YqVIOGIiOGLjeGKleGMhQ!5e0!3m2!1sen!2sus!4v1676196458549!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <span>Map</span>
+                </div>
+            </a>
+        </div>
+        <div id="testimony">
+            <p>
+                "I visited AASTU Staff Lounge and they provide excellent service. The servers were friendly, attentive and professional. My food was cooked to perfection and arrived promptly. Overall, it was a pleasant experience and I would recommend this lounge to friends and family."
+                <b> <br>Samuel Winner </b><br>
+            </p>
+        </div>
+
+        <div class="form-container" id="form-container">
+            <p id="upload-text"></p>
+            <form action="" id="form">
+                <div class="input-control">
+                    <label for="food-name">Select Food</label required>
+                    <select name="" id="food-name" name="food-name" class="form-control">
+                        <option value="">Food choice</option>
+                        <optgroup label="Breakfast">
+                            <option value="pasta">Pasta</option>
+                            <option value="Firfir">FIrfir</option>
+                            <option value="Inkulal">Inkulal</option>
+                        </optgroup>
+                        <optgroup label="Lunch">
+                            <option value="Shiro">Shiro</option>
+                            <option value="Tibs">Tibs</option>
+                            <option value="Inkulal">Inkulal</option>
+                        </optgroup>
+                        <optgroup label="Dinner">
+                            <option value="Shiro">Shiro</option>
+                            <option value="Tibs">Tibs</option>
+                            <option value="Kikil">Kikil</option>
+                        </optgroup>
+                        <optgroup label="Special food">
+                            <option value="Special Shiro">Special Shiro</option>
+                            <option value="Kitifo">Kitifo/option>
+                            <option value="Special Tibs">Special Tibs</option>
+                            <option value="Doro wot">Doro wot</option>
+                            <option value="Kurt Siga">Kurt Siga</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="input-control">
+                    <label for="block" >Block Where are order from</label>
+                    <input type="number" min="0" max="90" id="block" placeholder="42" name="block" class="form-control" required>
+                </div>
+
+
+
+
+                <div class="input-control">
+                    <label for="soft">Soft Beverage</label>
+                    <div class="form-control" style="text-align: center;" >
+                        <input type="checkbox" name="baverage" id="soft" required>Coca-Cola
+                        <input type="checkbox" name="baverage" id="soft" >Pepsi
+                        <input type="checkbox" name="baverage" id="soft">Water
+                        <br>
+                        <input type="checkbox" name="baverage" id="soft">Fanta
+                        <input type="checkbox" name="baverage" id="soft">Juice
+                        <input type="checkbox" name="baverage" id="soft">Not required
+
+                    </div>
+                </div>
+                <div class="input-control">
+                    <label for="service">How you want to get your service?</label>
+                <div class="form-control">
+                    <input type="radio" id="service" name="service" required>Casual dining
+                    <input type="radio" id="service" name="service" required>delivery
+                </div>
+                </div>
+
+                <div class="input-control">
+                    <label for="hotbeverage">Select Hot Drinks</label>
+                    <select name="" id="hotbeverage" class="form-control" required>
+                        <option value="">I don't want</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="macchiato">Macchiato</option>
+                        <option value="milk">MilK</option>
+                        <option value="tea">Tea</option>
+                    </select>
+                </div>
+                <button type="submit">Order Now</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer-control">
+        <div class="footer-container">
+            <div class="about-us" id="about">
+                <span>About US</span> <br>
+                <i class="fa-solid fa-address-card" id="icon"style="margin: 0px 10px;"></i>
+                <p>we are passionate about creating delicious food that our customers love. We believe that high-quality ingredients and exceptional customer service are the keys to success, and we strive to fulfill our customers requirement</p>
+            </div>
+            <div class="contact-us" id="contact">
+                <span>Contact US</span> <br>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" id="icon"></i></a>&nbsp;
+                <a href="https://www.youtube.com/" target="_blank" > <i class="fa-brands fa-youtube" id="icon"></i></a>&nbsp;
+                <a href="https://mail.google.com/mail/" target="_blank" > <i class="fa-solid fa-envelope" id="icon" style="margin:0 10px;"></i></a>
+                <p>Phone NUmber: +251912345678</p>
+                <p>Telephone: +251123456789</p>
+                <p>Email: aastustafflounge@gmail.com</p>
+            </div>
+            <div class="address">
+                <span>Address</span><br/>
+                <a href="https://www.google.com/maps/place/Memihiran+Lounge-+%E1%88%98%E1%88%9D%E1%88%85%E1%88%AB%E1%8A%95+%E1%88%88%E1%8B%8D%E1%8A%95%E1%8C%85/@8.8840289,38.8095642,17z/data=!3m1!4b1!4m6!3m5!1s0x164b79cdb6c1b8e3:0xc1e4e44076646a6d!8m2!3d8.8840289!4d38.8117529!16s%2Fg%2F11nxg1d2bn" target="_blank"><i class="fa-solid fa-location-dot" id="icon"style="margin:0 10px;"></i></a>
+                <p>Addis Ababa Science and Technology University,<br>  Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+        <div id="copy-right">&copy;AASTU Staff Lounge 2023</div>
+    </footer>
+
+</body>
+</html>
